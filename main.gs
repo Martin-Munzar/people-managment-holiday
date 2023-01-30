@@ -37,7 +37,7 @@ function main() {
       }
 
       if(holidayTakenCounter > 3) {  // if a person has taken more then 3 days off write it
-        //Logger.log("**Writing**");
+        // Logger.log("**Writing**");
         try {
           sheetPeople.getRange(startRowPeople + row, collomnPeople + FirstShownColumn("People")).setValue("Holiday - most of the weak"); 
          } catch (e) {
@@ -46,11 +46,12 @@ function main() {
         collomnPeople++;  
       }
 
-      //Logger.log("----END OF WEAK " + i + "----");    
+      // Logger.log("----END OF WEAK " + i + "----");    
     }
 
   row++;
-  //Logger.log("----END OF PERSON " + row + "----");   
+    
+  // Logger.log("----END OF PERSON " + row + "----");   
   }
 }
 
@@ -77,7 +78,6 @@ function FirstShownColumn(sheetName) {
       
       startColumn = estimatedStartColumn; //Logger.log(startColumn);
       return startColumn;
-
     break;  
     
     case "DetailPeople":
@@ -89,7 +89,6 @@ function FirstShownColumn(sheetName) {
 
       startColumn = estimatedStartColumn; //Logger.log(startColumn);
       return startColumn; 
-      
     break;
   }
 }
