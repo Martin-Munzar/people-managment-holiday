@@ -46,18 +46,16 @@ function main() {
         collomnPeople++;  
       }
 
-      //Logger.log("----END OF WEAK " + i + "----"); 
-    
+      //Logger.log("----END OF WEAK " + i + "----");    
     }
 
   row++;
-  //Logger.log("----END OF PERSON " + row + "----"); 
-  
+  //Logger.log("----END OF PERSON " + row + "----");   
   }
 }
 
 function GetPeopleCount() {
-  var peopleCount = 60; //estimated people count to make the while faster
+  var peopleCount = 60; // estimated people count to make the while faster
 
   while (sheetDetailPeople.getRange(peopleCount, 1).getValue() !== "") {
     peopleCount++;
@@ -67,7 +65,7 @@ function GetPeopleCount() {
 }
 
 function FirstShownColumn(sheetName) {
-  var estimatedStartColumn; //if there are some hidden columns 
+  var estimatedStartColumn; // if there are some hidden columns 
 
   switch (sheetName) {
     case "People":
